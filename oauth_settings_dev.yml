@@ -1,5 +1,5 @@
 app_id: 'f1254edd-c8ca-4d97-aa9f-912cb5f2654b'
-app_secret: '6f~8Q~EzoMN8AziSZQ2vbfw.OoF..Pwx..6Muai0'
+app_secret: 'Pss8Q~LxSn~PHpiLWNhieTyFzo7gXhACCusKRcIA'
 redirect: 'http://localhost:8000/callback'
 scopes:
     - user.read
