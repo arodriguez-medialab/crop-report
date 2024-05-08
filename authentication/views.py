@@ -61,4 +61,4 @@ def callback(request):
 def sign_out(request):
     logout(request)
     remove_user_and_token(request)
-    return HttpResponseRedirect(os.getenv('LOGOUT_REDIRECT_URL', "https://login.microsoftonline.com/common/oauth2/v2.0/logout?post_logout_redirect_uri=http%3A%2F%2Flocalhost%3A8000%2Flogin%2F"))
+    return HttpResponseRedirect(os.getenv('LOGOUT_REDIRECT_URL', "https://login.microsoftonline.com/common/oauth2/v2.0/logout?post_logout_redirect_uri=https://crop-report.agritop.net/login/"))
