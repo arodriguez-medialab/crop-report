@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Página de Acceso</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        {% load static %}
+        <link rel="icon" href="{% static 'images/agritop_favicon.png' %}">
+        <title>Agritop Crop-Report</title>
+        <meta name="description" content="Agritop Crop-Report">
+        <meta name="keywords" content="Agritop Crop-Report">
+        <meta name="author" content="Celeritech">
+        <!--Made with love by Mutiullah Samim -->
+        {% load static %}
+        <!--Bootsrap 4 CDN-->
+        <link
+            rel="stylesheet"
+            href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+            integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+            crossorigin="anonymous"
+        />
+
+        <!--Fontawesome CDN-->
+        <link
+            rel="stylesheet"
+            href="https://use.fontawesome.com/releases/v5.3.1/css/all.css"
+            integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU"
+            crossorigin="anonymous"
+        />
+
+        <!--Custom styles-->
+        <link rel="stylesheet" href="{% static "styles/login_custom.css" %}"
+        type="text/css">
+    </head>
+    <body>
+        <div class="container">
+            <div class="d-flex justify-content-center h-100">
+                <div class="card">
+                    <div class="card-header">
+                        <div class="d-flex justify-content-center">
+ <img class="mb-4" src="{% static "images/agritop_logo.png" %}" alt="agritop">
+                        </div>
+                        <h2>Agritop Crop-Report</h2>
+                        <h4>Ingrese al Sistema</h4>
+                    </div>
+                    <div class="card-body">
+                        <form>
+                            <div class="form-group d-flex justify-content-center">
+                                <button onclick="window.location.href='{% url "admin_signin" %}'" class="btn btn-lg login_btn" type="button" name="login" type="submit">Iniciar sesión como Administrador</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

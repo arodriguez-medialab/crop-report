@@ -1,0 +1,31 @@
+{% extends 'layouts/base.html' %} {% load static %} {% block title %} Resultados
+de la carga de data entries {% endblock title %}
+
+<!-- Specific CSS goes HERE -->
+{% block stylesheets %}{% endblock stylesheets %} {% block content %}
+<!-- Header -->
+
+<div class="header bg-transparent pt-4 pt-md-7"></div>
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-xl-12 mb-xl-0">
+            <div class="card card-frame p-0">
+                <div class="card-body card-body-frame p-0 border-0">
+                    <iframe
+                        id="power-bi-frame"
+                        title="Crop-report"
+                        src="https://app.powerbi.com/reportEmbed?reportId=9c066549-0fa8-4bd1-8ae7-65dc0a38bd6a&autoAuth=true&ctid=39baa05b-e303-4562-8168-db29b32addd4&config=eyJjbHVzdGVyVXJsIjoiaHR0cHM6Ly93YWJpLXBhYXMtMS1zY3VzLXJlZGlyZWN0LmFuYWx5c2lzLndpbmRvd3MubmV0LyJ9"
+                        frameborder="0"
+                        framepadding="0"
+                        allowfullscreen="true"
+                    ></iframe>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+{% endblock content %}
+
+<!-- Specific JS goes HERE -->
+{% block javascripts %} {% endblock javascripts %}
