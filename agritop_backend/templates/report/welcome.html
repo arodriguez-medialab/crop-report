@@ -9,16 +9,10 @@ de la carga de data entries {% endblock title %}
 <div class="container-fluid">
     <div class="row">
         <div class="col-xl-12 mb-xl-0">
-            <div class="card card-frame p-0">
-                <div class="card-body card-body-frame p-0 border-0">
-                    <iframe 
-                       title="Crop-report" 
-                       width="1140" 
-                       height="541.25" 
-                       src="https://app.powerbi.com/reportEmbed?reportId=9c066549-0fa8-4bd1-8ae7-65dc0a38bd6a&autoAuth=true&ctid=39baa05b-e303-4562-8168-db29b32addd4" 
-                       frameborder="0"
-                        allowFullScreen="true">
-                    </iframe>
+            <div class="card card-frame p-0" >
+                <div class="card-body card-body-frame p-0 border-0" style="display: flex; justify-content: center; place-items: center;">
+                        <!-- Utiliza el enlace como un botón -->
+                        <a href="https://app.powerbi.com/reportEmbed?reportId=9c066549-0fa8-4bd1-8ae7-65dc0a38bd6a&autoAuth=true&ctid=39baa05b-e303-4562-8168-db29b32addd4"  target="_blank"  class="btn btn-primary" style="background-color: #EBE410; color: black;">Abrir Reporte</a>
                 </div>
             </div>
         </div>
@@ -28,4 +22,6 @@ de la carga de data entries {% endblock title %}
 {% endblock content %}
 
 <!-- Specific JS goes HERE -->
-{% block javascripts %} {% endblock javascripts %}
+{% block javascripts %} 
+
+{% endblock javascripts %}
