@@ -241,3 +241,5 @@ if os.getenv('DEBUG_MODE') == "False":
     CSRF_TRUSTED_ORIGINS = ['https://portal-agritop-backend.azurewebsites.net']
 
 LOGOUT_REDIRECT_URL = '/admin'
+
+SECURE_CROSS_ORIGIN_OPENER_POLICY = "same-origin-allow-popups"
