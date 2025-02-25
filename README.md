@@ -35,9 +35,9 @@ GRANT ALL PRIVILEGES ON DATABASE nombre_bd TO usuario_bd;
 ```
 
 #### 🔹 Restaurar la base de datos desde un backup (`.dump` o `.sql`)
-Si tienes un archivo de respaldo `backup.dump`, usa el siguiente comando:
+Si tienes un archivo de respaldo `backup_agritop_bd_240225.dump`, usa el siguiente comando:
 ```bash
-pg_restore -U usuario_bd -d nombre_bd -1 backup.dump
+pg_restore -U usuario_bd -d nombre_bd -1 backup_agritop_bd_240225.dump
 ```
 Si el backup es un `.sql`, usa:
 ```bash
